@@ -1,0 +1,11 @@
+html, body {
+  height: 100%; }
+
+.div_main {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/img_bg.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%; }

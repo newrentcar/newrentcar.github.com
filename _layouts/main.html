@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 <script>
     if(typeof jQuery!=='undefined'){
@@ -32,12 +33,14 @@
 </script>
   </head>
   <body>
+  <div class="div_main">
   	<form id="form1" name="form1" method="POST">
 		<input type="name" id="name" name="name">
 		<input type="tel" id="tel" name="tel">
 		<input type="button" value="제출" onclick="test(); return false;">
 </form>
     {{ content }}
+</div>
   </body>
 </html>
 
