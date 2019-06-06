@@ -31,17 +31,28 @@
         }); // $.ajax */
     }
 </script>
-  </head>
-  <body>
-  <div class="div_main">
-  	<form id="form1" name="form1" method="POST">
-		<input type="name" id="name" name="name">
-		<input type="tel" id="tel" name="tel">
-		<input type="button" value="제출" onclick="test(); return false;">
-</form>
+</head>
+<body>
+    <div class="div_1" >
+        <img src="../assets/images/bg1.jpg">
+    </div>
+    <div class="div_2">
+        <center>
+            <form class="div_form" id="form1" name="form1" method="POST">
+                    <div class="div_input">
+                      <input class="input_box" type="name" id="name" name="name" placeholder="이름" tabindex="2">
+                      <input class="input_box" type="tel" id="tel" name="tel" placeholder="연락처" >
+                    </div>
+                    <input class="input_contents" placeholder="원하는차종">
+                <input class="btn_submit" type="image" src="../assets/images/img_button.jpg" onclick="test(); return false;">
+            </form>
+        </center>
     {{ content }}
-</div>
-  </body>
+    </div>
+    <div class="div_3">
+        <img src="../assets/images/bg3.jpg">
+    </div>
+</body>
 </html>
 
 
