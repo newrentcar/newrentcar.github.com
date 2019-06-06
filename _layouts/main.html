@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{  site.baseurl  }}/assets/css/styles.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 <script>
     if(typeof jQuery!=='undefined'){
@@ -34,7 +34,7 @@
 </head>
 <body>
     <div class="div_1" >
-        <img src="../assets/images/bg1.jpg">
+        <img src="{{  site.baseurl  }}/assets/images/bg1.jpg">
     </div>
     <div class="div_2">
         <center>
@@ -44,13 +44,13 @@
                       <input class="input_box" type="tel" id="tel" name="tel" placeholder="연락처" >
                     </div>
                     <input class="input_contents" placeholder="원하는차종">
-                <input class="btn_submit" type="image" src="../assets/images/img_button.jpg" onclick="test(); return false;">
+                <input class="btn_submit" type="image" src="{{  site.baseurl  }}/assets/images/img_button.jpg" onclick="test(); return false;">
             </form>
         </center>
     {{ content }}
     </div>
     <div class="div_3">
-        <img src="../assets/images/bg3.jpg">
+        <img src="{{  site.baseurl  }}/assets/images/bg3.jpg">
     </div>
 </body>
 </html>
