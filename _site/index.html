@@ -17,12 +17,12 @@
         console.log(formData)
         $.ajax({
             cache : false,
-            url : "https://usebasin.com/f/33d93a7c1a2e", // 요기에
+            url : "https://usebasin.com/f/2128d4147f83", // 
             type : 'POST', 
             data : formData, 
             success : function(data) {
                 //var jsonObj = JSON.parse(data);
-                alert("success")
+                alert("전송되었습니다")
             }, // success 
     
             error : function(xhr, status) {
@@ -40,10 +40,10 @@
         <center>
             <form class="div_form" id="form1" name="form1" method="POST">
                     <div class="div_input">
-                      <input class="input_box" type="name" id="name" name="name" placeholder="이름" >
-                      <input class="input_box" type="tel" id="tel" name="tel" placeholder="연락처" >
+                      <input class="input_box" type="text" id="name" name="name" placeholder="이름" required>
+                      <input class="input_box" type="text" id="tel" name="tel" placeholder="연락처" required>
                     </div>
-                    <input class="input_contents" type="car" id="car" name="car" placeholder="원하는차종">
+                    <input class="input_contents" type="text" id="car" name="car" placeholder="원하는차종" required>
                 <input class="btn_submit" type="image" src="/assets/images/img_button.jpg" onclick="test(); return false;">
             </form>
         </center>
